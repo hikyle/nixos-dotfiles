@@ -1,0 +1,81 @@
+@import "colors.css";
+
+* {
+	font-family: "Inter Nerd Font";
+	font-size: 18px;
+	color: @text;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+#waybar {
+	background: @background;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+window#waybar.empty #window {
+	background-color: transparent;
+}
+
+#workspaces label {
+	font-size: 15px;
+}
+
+#workspaces button.active label {
+	color: @highlight;
+}
+
+#workspaces button:hover {
+	background: rgba(191, 172, 226, 0.1);
+	border: none;
+	box-shadow: none;
+	text-shadow: none;
+	transition: none;
+}
+
+#tray, #clock, #pulseaudio.input #pulseaudio.output, #custom-exit, #power-profiles-daemon {
+	padding: 0 0.5rem;
+}
+
+#pulseaudio.input {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+#pulseaudio.input.source-muted, #pulseaudio.output.muted {
+	color: @audiomuted;
+}
+
+#tray {
+	margin-right: 0.5rem;
+}
+
+#custom-exit {
+	margin-right: 5px;
+	color: @highlight;
+	font-size: 20px;
+}
+
+#custom-launcher {
+	margin: 0 5px 0 10px;
+	color: @text;
+}
+
+#custom-launcher:hover {
+	color: @highlight;
+}
+
+#power-profiles-daemon {
+	padding-right: 1rem;
+}
+
+#power-profiles-daemon.performance {
+	color: @performance;
+}
+
+#power-profiles-daemon.balanced {
+	color: @text;
+}
+
+#power-profiles-daemon.power-saver {
+	color: @powersave;
+}
