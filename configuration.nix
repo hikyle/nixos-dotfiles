@@ -59,26 +59,8 @@
 		fd
 		eza
 		bat
-		neovim
-		protonplus
 		fastfetch
-		heroic
 		gh
-		wl-clipboard
-		papirus-icon-theme
-		kitty
-		nwg-look
-		waypaper
-		hyprpaper
-		xdg-desktop-portal-gtk
-		mate.mate-polkit
-		pulseaudioFull
-		pavucontrol
-		hyprshot
-		grim
-		hyprpicker
-		fuzzel
-		bibata-cursors
 	];
 
 	fonts.packages = with pkgs; [
