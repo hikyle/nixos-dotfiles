@@ -66,6 +66,9 @@
 	fonts.packages = with pkgs; [
 		nerd-fonts.jetbrains-mono
 		nerd-fonts.ubuntu
+		noto-fonts
+		noto-fonts-cjk-sans
+		noto-fonts-color-emoji
 	];
 
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];

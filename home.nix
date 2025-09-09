@@ -33,6 +33,8 @@ in
 		heroic
 		bibata-cursors
 		discord
+		fuzzel
+		tokyonight-gtk-theme
 	];
 
 	programs.bash = {
